@@ -23,4 +23,5 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           push: true
-          tags: kyuubi2709/sushiswap-interface:latest
+          repository: kyuubi2709/sushiswap-interface 
+          tags: latest, ${{ github.run_number}}
